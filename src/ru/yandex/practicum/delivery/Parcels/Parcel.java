@@ -2,9 +2,6 @@ package ru.yandex.practicum.delivery.Parcels;
 
 public abstract class Parcel {
 
-    private static final int STANDARD_PARCEL_COST = 2;
-    private static final int PERISHABLE_PARCEL_COST = 3;
-    private static final int FRAGILE_PARCEL_COST = 4;
 
     protected String description;
     protected String deliveryAddress;
@@ -32,18 +29,6 @@ public abstract class Parcel {
     }
 
     protected abstract int pricePerKg();
-
-    public int getStandardParcelCost() {
-        return STANDARD_PARCEL_COST;
-    }
-
-    public int getFragileParcelCost() {
-        return FRAGILE_PARCEL_COST;
-    }
-
-    public int getPerishableParcelCost() {
-        return PERISHABLE_PARCEL_COST;
-    }
 
     public String getDeliveryAddress() {
         return deliveryAddress;
